@@ -1,0 +1,887 @@
+/* ---------------------RESETEO--------------------- */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* ---------------------GENERAL BODY Y MAIN--------------------- */
+body {
+	background-image: url(../Images/logo_fondo.png);
+	background-position: 50% 75%;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: 60%;
+}
+
+main {
+	margin: 0px 250px 0px 250px;
+}
+
+/* ---------------------NAV--------------------- */
+nav {
+	width: 100%;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	background-color: #fe9800;
+	flex-direction: column;
+}
+.nav_logo_container {
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.nav_logo {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	margin-bottom: 50px;
+}
+.nav_logo img {
+	width: 30%;
+}
+.nav_app_button {
+	width: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nav_app_button a {
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Cabin', sans-serif;
+}
+.nav_app_button a i {
+	margin-right: 5px;
+}
+.nav_ul {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nav_ul ul {
+	padding: 0;
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	list-style: none;
+	height: 40px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+.nav_ul ul li {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nav_anchor {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-family: 'Cabin', sans-serif;
+	text-decoration: none;
+	color: #fff;
+	transition: all 0.5s;
+	padding: 0 15px 0 15px;
+}
+.nav_anchor:hover {
+	background-color: #fff;
+	color: #fe9800;
+}
+.burger_menu {
+	display: none;
+}
+
+/* ---------------------FOOTER--------------------- */
+footer {
+	background-color: #fe9800;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 60px;
+}
+
+.footer_img {
+	width: 7%;
+	margin-left: 80px;
+}
+
+.footer_img img {
+	width: 100%;
+}
+
+.footer_info {
+	margin-right: 40px;
+	display: flex;
+	justify-content: space-evenly;
+	width: 40%;
+}
+.footer_info p {
+	color: #fff;
+	font-family: 'Cabin', sans-serif;
+	font-size: 15px;
+	margin: 0px 15px 0px 10px;
+}
+
+.footer_info p a {
+	color: #ffffff;
+}
+
+.footer_info p i {
+	margin-right: 5px;
+}
+
+.footer_info p a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.footer_app_button {
+	display: none;
+}
+
+/* ---------------------MAIN INDEX--------------------- */
+/* Título */
+.h1_index {
+	color: #fe9800;
+	font-family: 'Cabin', sans-serif;
+	font-weight: bold;
+	margin: 65px 0px 45px 0px;
+}
+
+/* Grid Index */
+.grid_index {
+	display: grid;
+	grid-template-areas: "grid_quienes_somos grid_quienes_somos grid_quienes_somos"
+		"que_es_queso_info que_es_queso_info que_es_queso_info" "grid_buscadores grid_alquiladores grid_nosotros";
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-bottom: 20px;
+}
+
+.grid_quienes_somos {
+	grid-area: grid_quienes_somos;
+}
+
+.grid_buscadores {
+	grid-area: grid_buscadores;
+}
+
+.grid_alquiladores {
+	grid-area: grid_alquiladores;
+}
+
+.grid_nosotros {
+	grid-area: grid_nosotros;
+}
+
+.que_es_queso_info {
+	grid-area: que_es_queso_info;
+	display: none;
+}
+
+/* Quienes Somos */
+.grid_quienes_somos {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.grid_quienes_somos a {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+}
+
+.foto_escritorio {
+	width: 100%;
+	border-radius: 5px;
+	-webkit-box-shadow: 8px 5px 16px 4px rgba(0, 0, 0, 0.17);
+	box-shadow: 8px 5px 16px 4px rgba(0, 0, 0, 0.17);
+}
+
+.foto_celular {
+	display: none;
+}
+
+.grid_quienes_somos a p {
+	position: absolute;
+	top: 70%;
+	text-align: center;
+	color: #ffffff;
+	font-family: 'Cabin', sans-serif;
+	font-weight: bold;
+	font-size: x-large;
+}
+
+.grid_quienes_somos_iframe {
+	position: absolute;
+	right: 2%;
+	bottom: 2%;
+}
+
+.grid_quienes_somos_iframe i {
+	color: #fe9800;
+}
+
+.quienes_somos_logo_quso {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	width: 30%;
+}
+/* Estilo Buscadores - Alquiladores - Nosotros */
+/* Buscadores */
+.grid_buscadores {
+	grid-area: grid_buscadores;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0px 10px 0px 0px;
+}
+
+.grid_buscadores a {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	width: 70%;
+}
+
+.grid_buscadores img {
+	border-radius: 5px;
+	-webkit-box-shadow: 8px 5px 16px 4px rgba(0, 0, 0, 0.17);
+	box-shadow: 8px 5px 16px 4px rgba(0, 0, 0, 0.17);
+	max-width: 100%;
+}
+
+.grid_buscadores a p {
+	position: absolute;
+	color: #ffffff;
+	font-family: 'Cabin', sans-serif;
+	font-weight: bold;
+	font-size: large;
+	top: 40%;
+	text-align: center;
+}
+
+/* Alquiladores */
+.grid_alquiladores {
+	grid-area: grid_alquiladores;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0px 5px 0px 5px;
+}
+
+.grid_alquiladores a {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	width: 70%;
+}
+
+.grid_alquiladores img {
+	border-radius: 5px;
+	-webkit-box-shadow: 8px 5px 16px 4px rgba(0, 0, 0, 0.17);
+	box-shadow: 8px 5px 16px 4px rgba(0, 0, 0, 0.17);
+	max-width: 100%;
+}
+
+.grid_alquiladores a p {
+	position: absolute;
+	color: #ffffff;
+	font-family: 'Cabin', sans-serif;
+	font-weight: bold;
+	font-size: large;
+	top: 40%;
+	text-align: center;
+}
+
+/* Nosotros */
+.grid_nosotros {
+	grid-area: grid_nosotros;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 0px 0px 0px 10px;
+}
+
+.grid_nosotros a {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	width: 70%;
+}
+
+.grid_nosotros img {
+	border-radius: 5px;
+	-webkit-box-shadow: 8px 5px 16px 4px rgba(0, 0, 0, 0.17);
+	box-shadow: 8px 5px 16px 4px rgba(0, 0, 0, 0.17);
+	max-width: 100%;
+}
+
+.grid_nosotros a p {
+	position: absolute;
+	color: #ffffff;
+	font-family: 'Cabin', sans-serif;
+	font-weight: bold;
+	font-size: large;
+	top: 40%;
+	text-align: center;
+	box-sizing: content-box;
+}
+.iframe_mobile {
+	display: none;
+}
+
+/* ---------------------BUSCADORES--------------------- */
+/* Título */
+.main_buscadores{
+	height: max-content;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 0;
+}
+.h1_buscadores {
+	color: #fe9800;
+	font-family: 'Cabin', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	font-size: 35px;
+	margin-bottom: 20px;
+	margin-top: 40px;
+}
+
+/* Cuerpo */
+.p_buscadores {
+	width: 80%;
+	margin-top: 20px;
+	text-align: justify;
+	font-family: 'Cabin', sans-serif;
+	font-size: 17px;
+	line-height: 30px;
+	color: #000;
+	margin-bottom: 30px;
+}
+
+.h3_buscadores {
+	color: #fe9800;
+	font-family: 'Cabin', sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	margin: 30px 0px 30px 0px;
+}
+.info_buscadores{
+	width: 80%;
+}
+.ul_buscadores {
+	font-family: 'Cabin', sans-serif;
+	font-size: 17px;
+	line-height: 30px;
+	margin-left: 20px;
+	margin-bottom: 150px;
+}
+
+/* ---------------------QUE ES QUSO--------------------- */
+/* Título */
+.h1_que_es_quso {
+	color: #fe9800;
+	font-family: 'Cabin', sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	margin: 30px 0px 30px 0px;
+	text-align: center;
+}
+
+/* Cuerpo */
+.main_que_es_quso {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.div_que_es_quso {
+	background-color: transparent;
+	border: none;
+	text-align: justify;
+	font-family: 'Cabin', sans-serif;
+	font-size: 17px;
+	line-height: 40px;
+	color: #000;
+	margin-bottom: 30px;
+}
+
+.div_que_es_quso span {
+	color: #fe9800;
+}
+
+.div_que_es_quso ul {
+	margin: 15px;
+	padding-left: 2rem;
+}
+
+/* ---------------------PROXIMAMENTE--------------------- */
+.h1_proximamente {
+	color: #fe9800;
+	font-family: 'Cabin', sans-serif;
+	text-align: center;
+	padding: 170px;
+	font-size: 400%;
+}
+
+/* ----------------------SECCIÓN ALQUILADORES---------------------- */
+.alquiladores_nosotros_main {
+	height: max-content;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.alquiladores_intro {
+	width: 80%;
+	height: max-content;
+}
+.alquiladores_intro h1 {
+	text-align: center;
+	margin-top: 40px;
+	font-size: 35px;
+	font-family: 'Cabin', sans-serif;
+	color: #fe9800;
+}
+.alquiladores_intro p {
+	margin-top: 20px;
+	text-align: justify;
+	font-family: 'Cabin', sans-serif;
+	font-size: 17px;
+	line-height: 30px;
+	color: #000;
+}
+.alquiladores_table {
+	width: 80%;
+	height: max-content;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.alquiladores_table h2 {
+	text-align: left;
+	margin-top: 30px;
+	font-size: 25px;
+	font-family: 'Cabin', sans-serif;
+	color: #fe9800;
+}
+.alquiladores_table table {
+	margin-top: 35px;
+	border-collapse: collapse;
+}
+.alquiladores_table table td {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-family: 'Cabin', sans-serif;
+	font-size: 15px;
+	border-bottom: 1px solid #fe9800;
+}
+.alquiladores_table p {
+	margin-top: 30px;
+	text-align: justify;
+	font-family: 'Cabin', sans-serif;
+	font-size: 17px;
+	color: #000;
+	line-height: 30px;
+	margin-bottom: 30px;
+}
+/* ----------------------SECCIÓN NOSOTROS---------------------- */
+.nosotros_info {
+	margin-top: 40px;
+	height: max-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nosotros_info_content {
+	width: 60%;
+	height: max-content;
+	margin: 10px;
+}
+.nosotros_info_content h2 {
+	margin-top: 20px;
+	font-size: 25px;
+	font-family: 'Cabin', sans-serif;
+	color: #fe9800;
+}
+.nosotros_info_content p {
+	margin-top: 10px;
+	text-align: justify;
+	font-family: 'Cabin', sans-serif;
+	font-size: 17px;
+	line-height: 30px;
+	color: #000;
+}
+.nosotros_info_content ul {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+	height: max-content;
+}
+.nosotros_info_content ul li {
+	margin-left: 50px;
+	text-align: justify;
+	font-family: 'Cabin', sans-serif;
+	font-size: 17px;
+	line-height: 30px;
+	color: #000;
+}
+.nosotros_info_content_img {
+	width: 60%;
+	height: 350px;
+	padding: 20px;
+}
+.nosotros_info_content_img img {
+	border-radius: 3px;
+	-webkit-box-shadow: 8px 5px 16px 4px rgba(0, 0, 0, 0.17);
+	box-shadow: 8px 5px 16px 4px rgba(0, 0, 0, 0.17);
+}
+.nosotros_info_content_img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.nosotros_clientes {
+	margin-top: 30px;
+	width: 80%;
+	height: max-content;
+	margin-bottom: 20px;
+}
+.nosotros_clientes h3 {
+	font-size: 22px;
+	font-family: 'Cabin', sans-serif;
+	color: #fe9800;
+	margin-bottom: 20px;
+}
+.nosotros_clientes div {
+	width: 100%;
+	height: max-content;
+	display: grid;
+	grid-gap: 25px;
+	grid-template-columns: repeat(4, 100px);
+	grid-template-rows: repeat(2, 100px);
+	justify-items: center;
+	justify-content: space-evenly;
+}
+.nosotros_clientes div img {
+	width: 100px;
+	height: 100px;
+}
+
+/* ---------------------MEDIA QUERIE--------------------- */
+/* Celular - Ipads */
+@media (max-width: 1024px) {
+	.main_index{
+		margin-bottom: 190px;
+	}
+
+	/* General */
+
+	main {
+		margin: 50px 20px 50px 20px;
+	}
+	/* Nav */
+	/* Agregado por mi */
+	/* .nav_logo img {
+		width: 100%;
+	} */
+	/* Index */
+	.grid_index {
+		grid-template-rows: auto;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "grid_quienes_somos grid_buscadores" "grid_alquiladores grid_nosotros";
+	}
+	/* Quienes Somos */
+	.grid_quienes_somos {
+		display: flex;
+		justify-content: center;
+		margin: 10px;
+		position: relative;
+	}
+
+	.grid_quienes_somos a {
+		width: 100%;
+	}
+
+	.grid_quienes_somos a p {
+		top: 40%;
+	}
+
+	.grid_quienes_somos_iframe {
+		display: none;
+	}
+
+	.quienes_somos_logo_quso {
+		display: none;
+	}
+
+	.iframe_mobile {
+		display: block;
+		position: absolute;
+		top: 80%;
+		left: 70%;
+	}
+
+	.iframe_mobile a {
+		text-decoration: none;
+		color: #fe9800;
+	}
+
+	.foto_escritorio {
+		display: none;
+	}
+
+	.foto_celular {
+		border-radius: 5px;
+		-webkit-box-shadow: 8px 5px 16px 4px rgba(0, 0, 0, 0.17);
+		box-shadow: 8px 5px 16px 4px rgba(0, 0, 0, 0.17);
+		max-width: 100%;
+		display: flex;
+	}
+	/* Toggle */
+	.que_es_queso_info {
+		display: none;
+	}
+	/* Buscadores - Alquiladores - Nosotros */
+
+	.grid_buscadores {
+		display: flex;
+		justify-content: center;
+		margin: 10px;
+	}
+
+	.grid_alquiladores {
+		display: flex;
+		justify-content: center;
+		margin: 10px;
+	}
+
+	.grid_nosotros {
+		display: flex;
+		justify-content: center;
+		margin: 10px;
+	}
+
+	.grid_buscadores a {
+		width: 100%;
+		height: 100%;
+	}
+
+	.grid_alquiladores a {
+		width: 100%;
+	}
+
+	.grid_nosotros a {
+		width: 100%;
+	}
+
+	.grid_buscadores a p {
+		font-size: x-large;
+	}
+
+	.grid_alquiladores a p {
+		font-size: x-large;
+	}
+
+	.grid_nosotros a p {
+		font-size: x-large;
+	}
+	/* Buscadores */
+	.ul_buscadores {
+		margin-bottom: 20px;
+	}
+	/* Proximamente */
+	.h1_proximamente {
+		font-size: xx-large;
+		padding: 100px;
+	}
+
+	/* Footer */
+	/* Agregado por mi  */
+	.footer_img {
+		width: 20%;
+		margin-left: 30px;
+	}
+}
+
+@media (max-width: 480px) {
+	.grid_quienes_somos a p {
+		top: 20%;
+	}
+	/* Footer */
+	/* Agregado por mi */
+	footer {
+		flex-direction: column;
+		height: 150px;
+	}
+	.footer_img {
+		width: 40%;
+		margin: 10px;
+	}
+	.footer_info {
+		width: 100%;
+		margin: 7px;
+	}
+	.h1_proximamente {
+		font-size: large;
+		padding: 70px;
+	}
+	body {
+		background-position: 50% 55%;
+	}
+}
+
+/* ----------------------Media NAVBAR---------------------- */
+@media (max-width: 768px) {
+	body {
+		overflow-x: hidden;
+	}
+	/* ----------------------NAVBAR----------------------*/
+	nav {
+		height: 80px;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+		position: relative;
+		z-index: 1;
+	}
+	.nav_logo_container {
+		margin: 0;
+		margin-left: 60px;
+		width: 40%;
+		height: 100%;
+	}
+	.nav_logo {
+		width: 100%;
+		height: 100%;
+	}
+	.nav_logo img {
+		width: 100%;
+	}
+	.nav_app_button {
+		display: none;
+	}
+	.nav_ul {
+		position: absolute;
+		top: 0;
+		margin-top: 80px;
+		background-color: #fe9800;
+		transform: translateX(100%);
+		transition: all 0.5s ease-in;
+		border-bottom: none;
+		display: none;
+	}
+	.nav_ul_active {
+		transition: all 0.5s ease-in;
+		transform: translateX(0%);
+		display: flex;
+	}
+	.nav_ul ul {
+		flex-direction: column;
+		height: 80vh;
+		padding: 0px;
+	}
+	.nav_anchor {
+		display: flex;
+		align-items: center;
+		height: 100%;
+		font-size: 14px;
+		text-transform: uppercase;
+		font-family: 'Cabin', sans-serif;
+		text-decoration: none;
+		color: #fff;
+		transition: all 0.5s;
+		padding: 0px 0px 0px 0px;
+	}
+	.nav_anchor:hover {
+		background-color: #fe9800;
+		color: #000;
+	}
+	.burger_menu {
+		margin-right: 50px;
+		height: 100%;
+		align-items: center;
+		display: flex;
+		color: #fff;
+		font-size: 20px;
+		cursor: pointer;
+	}
+
+	/* ----------------------SECCIÓN ALQUILADORES---------------------- */
+	.alquiladores_table {
+		width: 95%;
+	}
+	/* ----------------------SECCIÓN NOSOTROS---------------------- */
+	.nosotros_info {
+		width: 100%;
+		flex-direction: column;
+		margin-top: 10px;
+	}
+	.nosotros_info_content {
+		width: 60%;
+		height: max-content;
+	}
+	.nosotros_info_content div p {
+		font-size: 15px;
+	}
+	.nosotros_info_content_img {
+		margin-top: 30px;
+		width: 90%;
+		height: 250px;
+	}
+	#contact_info {
+		margin-top: 15px;
+		flex-direction: column;
+	}
+	.nosotros_clientes {
+		margin-top: 30px;
+		width: 80%;
+		height: max-content;
+		margin-bottom: 20px;
+	}
+	.nosotros_clientes div {
+		width: 100%;
+		height: max-content;
+		display: grid;
+		grid-gap: 25px;
+		grid-template-columns: repeat(4, 60px);
+		grid-template-rows: repeat(2, 60px);
+		justify-items: center;
+		justify-content: space-evenly;
+	}
+	.nosotros_clientes div img {
+		width: 60px;
+		height: 60px;
+	}
+	/* ----------------------FOOTER---------------------- */
+	.footer_app_button {
+		display: flex;
+		margin-bottom: 5px;
+		margin-right: 10px;
+	}
+	.footer_app_button a {
+		text-decoration: none;
+		color: #ffffff;
+		font-family: 'Cabin', sans-serif;
+	}
+}
